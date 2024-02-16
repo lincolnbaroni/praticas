@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0, 128, 0, 0.699);
+    box-shadow: 1px 1px 6px 1px black;
+}
+
+.logo h1 {
+    color: white;
+    font-weight: 200;
+    margin-left: 40px;
+    padding: 5px 8px;
+}
+
+.logo h1:hover {
+    background-color: rgba(0, 0, 255, 0.603);
+    border-radius: 8px;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transform: translate(3px, 3px);
+    transition: 0.6s;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.menu nav ul li {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 8px;
+}
+
+.menu nav ul li a:hover {
+    background-color: rgba(0, 0, 255, 0.603);
+    border-radius: 8px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.texto {
+    border-radius: 9px 0px 9px 0px;
+    border: 1px solid black;
+    padding: 15px;
+    max-width: 930px;
+    height: 400px;
+    margin: 0  auto;
+    display: flex;
+    align-items: center;
+}
+
+.texto h2 {
+    text-align: center;
+    padding: 0px 0px 8px 0px;
+}
+
+/* PRATICAS UTILIZANDO OVERFLOW*/
+
+.texto .exemplo1, .exemplo2, .exemplo3 {
+    width: 400px;
+    height: 250px;
+    text-indent: 30px;
+    text-align: left;
+    padding: 0px 20px;
+    line-height: 1.4em;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
+
+footer .final {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: rgba(0, 128, 0, 0.699);
+    padding: 15px 0px;
+    box-shadow: 1px 1px 7px  black;
+}
+
+footer .final p {
+    color: white;
+    font-size: 1.1em;
+}
+
+footer .final a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer .final a:hover {
+    text-decoration: underline;
+}
+
+/* PRATICAS COM MANINUPALÇÃO DE ESTILOS em href */
+
+footer .final a[href="https://www.instagram.com"] {
+    background-color: red;
+    padding: 5px;
+}
+
+footer .final a[href*="book"] {
+    background-color: blue;
+    padding: 5px;
+}
+
+
+/* LAYOUT RESPONSIVO*/
+
+@media screen and (max-width: 620px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px; 
+        width: 100%;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    .menu nav ul {
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    main .texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 680px;
+    }
+
+    .texto .exemplo1, .exemplo2, .exemplo3 {
+        padding: 30px;
+        border: 1px solid black;
+        margin: 8px 0px;
+        width: 100%;
+    }
+
+    footer .final {
+        display: block;
+        text-align: center;
+        padding: 0px 13px;
+    }
+
+    footer .final, p, a {
+        padding: 5px;
+    }
+
+    footer .final a[href="https://www.instagram.com"], a[href*="book"] {
+        background-color: initial;
+    } 
+
+    footer .final a[href*="book"] {
+        background-color: initial;
+    }
+}

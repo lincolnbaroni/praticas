@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Pratica com Formulários</h1>
+    <div class="formu">
+        <form action="">
+            <fieldset>
+                <legend>Dados:</legend>
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="seu nome" size="30">
+                </p>
+                <p>
+                    <label for="isobre">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="isobre" required maxlength="34" placeholder="sobrenome" size="30">
+                </p>
+                <p>
+                    <label for="iano">Ano de Nascimento: </label>
+                    <input type="date" name="ano" id="iano">
+                </p>
+            <fieldset>
+                <legend>Contatos</legend>
+                <p>
+                    <label for="itel">Telefone: </label>
+                    <input type="tel" name="telefone" id="itel" required placeholder="(xx) xxxxx - xxxx">
+                </p>
+                <p>
+                    <label for="imail">E-mail: </label>
+                    <input type="email" name="email" id="imail" required>
+                </p>
+            </fieldset>
+        </fieldset>
+            <fieldset>
+                <legend>Endereço Residente</legend>
+                <p>
+                    <label for="iend">Endereço: </label>
+                    <input type="text" name="endereco" id="iend" required maxlength="40" size="40">
+                </p>
+                <p>
+                    <label for="ibai">Bairro: </label>
+                    <input type="text" name="bairro" id="ibai">
+                </p>
+                <p>
+                    <label for="icep">CEP: </label>
+                    <input type="text" name="cep" id="icep" required maxlength="8">
+                </p>
+            </fieldset>
+        
+            <p>
+                <label for="isexo">Sexo </label><br>
+                Masculino: <input type="radio" name="masculino" id="isexo"> <br>
+                Feminino: <input type="radio" name="masculino" id="isexo">
+            </p>
+            <p>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPAR">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

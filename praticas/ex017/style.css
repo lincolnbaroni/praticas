@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+@font-face{
+    font-family: Minha fonte;
+    src:url(fonts/OpenSans-VariableFont_wdth\,wght.ttf)
+}
+
+header {
+    text-align: center;
+    background-color: #ccc;
+    margin-top: 20px;
+    padding: 15px 0px;
+}
+
+header h1, p {
+    font-family: "Minha fonte";
+    padding: 0px 0px 10px 0px;
+}
+
+form fieldset {
+    padding: 10px;
+    margin: 0px 10px;
+    max-width: 550px;
+    margin: auto;
+}
+
+.conteudo-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.conteudo-form input[type="text"], input[type="email"], input[type="password"] {
+    width: 300px;
+    padding: 6px 0px;
+    margin: 9px 0px;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.form-radio {
+    display: block;
+    
+}
+
+.conteudo-form input[type="text"], input[type="email"], input[type="password"]:focus {
+    outline: none;
+}
+.conteudo-form input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px solid blue;
+}

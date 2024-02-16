@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #041B15;
+    --cor02: #136F63;
+    --cor03: #84CAE7;
+}
+
+main {
+    display: flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+main > div#caixa01 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--cor02);
+    border: 3px solid black;
+    margin: 5px;
+}
+
+main > div#caixa02 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--cor01);
+    border: 3px solid black;
+    margin: 5px;
+}
+
+main > div#caixa03 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--cor03);
+    border: 3px solid black;
+    margin: 5px;
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@500&display=swap');
+
+:root {
+    --font-mulis: 'Mulish', sans-serif;
+    --font-poppis: 'Poppins', sans-serif;
+
+    --cor01: #0092DF;
+    --cor02: #404040;
+}
+
+    body {
+        margin: 0px;
+        
+    }
+
+    header {
+        background-color: var(--cor01);
+        padding: 30px;
+    }
+
+    header > nav {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-family: var(--font-poppis);
+        padding: 10px;
+        font-size: 19px;
+        
+    }
+    header a:hover {
+       color: black; 
+       text-decoration: underline;
+       background-color: rgba(255, 255, 255, 0.603);
+       border-radius: 10px;
+    }
+    .img {
+        width: 100%;
+    }
+
+    .mundo {
+      width: 250px;
+    }
+
+    main {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    main p {
+        font-family: var(--font-mulis);
+        font-size: 1.1em;
+        color: black;
+        
+    }
+
+    main > p > span > a {
+        color: var(--cor01);
+        text-decoration: underline;
+        
+    }
+
+    main a:hover {
+        color: black;
+    }
+
+    main h1 {
+        font-family: var(--font-poppis);
+        font-size: 29px;
+        font-weight: bolder;
+    }
+
+    main h2 {
+        font-family: var(--font-poppis);
+    }
+
+    main > span a::before {
+        content: "\f073";
+    }
+
+    main > span > a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    main > span > a:hover {
+        color: var(--cor01);
+    }
+
+    main ol {
+        font-family: var(--font-mulis);
+        line-height: 2em;
+    }
+
+    .ft {
+        color: #1462AC;
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #2E2E35;;
+        color: white;
+        padding: 20px;
+        font-family: var(--font-mulis);
+    }
+
+    

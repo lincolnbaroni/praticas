@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: darkseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+
+nav a:hover {
+    background-color: rgb(0, 77, 0);
+    color: white;
+    font-weight: bolder;
+    transition: color 0.5s ease;
+    transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+}

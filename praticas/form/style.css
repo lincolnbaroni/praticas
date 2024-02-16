@@ -1,0 +1,21 @@
+@charset "UTF-8"
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 450px;
+}
+
+fieldset {
+   
+    display: block;
+}
+
+div.formu {
+    
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
