@@ -88,8 +88,63 @@ body, html {
 
 */
 
+/*PRATICAS COM VW E VH
 .box {
     width: 100vw;
     height: 100vh;
     background-color: red;
 }
+*/
+
+.box {
+    border: 1px solid black;
+    width: 33.3%;
+    height: 300px;
+    background-color: green;
+    float: left;
+}
+
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MAX-HEIGHT
+@media screen and (max-height: 580px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MIN-HEIGHT
+@media screen and (min-height: 320px {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MIN-WIDTH
+@media screen and (min-width: 580px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MAX-WIDTH
+@media screen and (max-width: 580px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
