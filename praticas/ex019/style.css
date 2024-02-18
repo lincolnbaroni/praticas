@@ -148,3 +148,19 @@ body, html {
     }
 }
 */
+
+/*PRATICAS COM MEDIA QUERIAS NA UTILIZAÇÃO DO E (UTILIZANDO O AND)
+@media screen and (max-width: 768px) and (min-height: 500px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIAS NA UTILIZAÇÃO DO OU (UTILIZA-SE VIRGULA, ESPAÇO E SCREEN AND)
+@media screen and (max-width: 768px) , screen and (max-width: 500px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
