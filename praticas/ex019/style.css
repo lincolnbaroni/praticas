@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/*MANIPULANDO PRIORIDADES DOS ELEMENTOS COM Z-INDEX
 .slider {
     width: 97%;
     margin: 0 auto;
@@ -40,7 +41,7 @@
     z-index: 1;
     left: 90px;
 }
-
+*/
 
 /*Pratica com porcentagem
 .parent {
