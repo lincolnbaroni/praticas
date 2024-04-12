@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pratica</title>
+
+    <style>
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .animationFadeIN {
+            animation: animacao1 2s linear;
+        }
+
+        @keyframes animacao1 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animationFadeOut {
+            animation: animacao1 2s linear;
+            animation-direction: reverse;
+            animation-fill-mode: forwards ;
+        }
+
+        .animationFadeINFadeOut {
+            animation: fadeInFadeOut 2s linear infinite;
+        }
+
+        @keyframes fadeInFadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.2;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+    .spinner {
+        border-radius: 50%;
+    }
+
+    @keyframes rotate {
+        from {transform: rotateZ(0deg);}
+        to {transform: rotateZ(360deg);}
+    }
+    
+      .animationSpinner {
+        animation: rotate 2s linear infinite;
+      }
+      
+      .animationSpinnerEase {
+        animation: rotate 2s ease infinite;
+      }
+
+      .animationSpinnerEaseOut {
+        animation: rotate 2s ease-out infinite;
+      }
+
+      .positionBox {
+        width: 100%;
+        height: 300px;
+        background-color: #444;
+      }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Animações</h1>
+    <h2>Fade</h2>
+    <section>
+        <div class="blue item animationFadeIN">Azul</div>
+        <div class="green item animationFadeOut">Azul</div>
+        <div class="green item animationFadeINFadeOut">Azul</div>
+    </section>
+
+    <hr>
+
+    <h2>Spinners</h2>
+    
+    <section>
+        <div class="item spinner blue animationSpinner"> Linear</div>
+        <div class="item spinner green animationSpinnerEase"> Ease</div>
+        <div class="item spinner red animationSpinnerEaseOut"> Ease Out</div>
+    </section>
+
+    <hr>
+
+    <h2>Position</h2>
+    <section class="positionBox">
+        <div class="item yellow">Amarelo</div>
+    </section>
+
+</body>
+</html>
