@@ -4,45 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Pratica</title>
+    <title>Relogio</title>
 
     <style>
 
-      
-        .conteudo {
-            width: 300px;
-            height: 300px;
-            position: relative;
-        }
+.conteiner {
+    width: 300px;
+    height: 300px;
+    position: relative;   
+}
 
-        .relogio {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-        }
+.relogio, .horas, .minutos {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 
-        .horas {
-            position: absolute;
-            top: 0;
-            left: 0px;
-        }
-        
     </style>
-   
 </head>
 <body>
-    
-    <h1>Relogio </h1>
+    <h1>Rélogio</h1>
 
-    <div class="conteudo">
-        <img class="relogio" src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/clock.svg" >
+    <div class="conteiner">
+        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/clock.svg" alt="" class="relogio">
 
-        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/hour.svg" class="horas">
+        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/hour.svg" alt="" class="horas">
 
-        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/minute.svg" class="minutos">
+        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/minute.svg" alt="" class="minutos">
     </div>
-
 </body>
 </html>
