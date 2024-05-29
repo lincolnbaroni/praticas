@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*MANIPULANDO PRIORIDADES DOS ELEMENTOS COM Z-INDEX
+.slider {
+    width: 97%;
+    margin: 0 auto;
+    max-width: 700px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.img-slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.one {
+    background-color: red;
+    z-index: 3;
+    
+}
+
+.two {
+    background-color: orange;
+    z-index: 2;
+    left: 50px;
+}
+
+.three {
+    background-color: pink;
+    z-index: 1;
+    left: 90px;
+}
+*/
+
+/*
+.parent {
+    width: 60%;
+    height: 400px;
+    background-color: orange;
+}
+
+.box {
+    width: 50%;
+    padding-top: 30%;
+    background-color: darkgray;
+}
+*/
+/*
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin:  20px auto;
+    padding: 30px 0;
+    border: 3px solid rgb(220,220,220);
+}
+
+.img-wrapper {
+    width: 33.3%;
+    padding-top: 33.3%;
+    float: left;
+    background-color: #ccc;
+    position: relative;
+    border: 5px solid white;
+}
+
+.img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+/*
+body, html {
+    height: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    float: left;
+}
+
+.content {
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: #ccc;
+    float: left;
+}
+*/
+
+/* MANIPULANDO DIMENSÃO UTILIZANDO CAL
+.box {
+    width: calc((100% / 3) + 80px);
+    height: 90px;
+    background-color: red;
+}
+
+*/
+
+/*PRATICAS COM VW E VH
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MAX-HEIGHT
+@media screen and (max-height: 580px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MIN-HEIGHT
+@media screen and (min-height: 320px {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MIN-WIDTH
+@media screen and (min-width: 580px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIES UILIZANDO MAX-WIDTH
+@media screen and (max-width: 580px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIAS NA UTILIZAÇÃO DO E (UTILIZANDO O AND)
+@media screen and (max-width: 768px) and (min-height: 500px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/*PRATICAS COM MEDIA QUERIAS NA UTILIZAÇÃO DO OU (UTILIZA-SE VIRGULA, ESPAÇO E SCREEN AND)
+@media screen and (max-width: 768px) , screen and (max-width: 500px) {
+    .box {
+        width: 100%;
+    }
+}
+*/
+
+/* PRATICAS COM MEDIA QUERIES UTILIZANDO INLINE-BLOC
+@media screen and (max-width: 768px) {
+
+    .box {
+        width: 50%;
+        max-width: none;
+    }
+    .box {
+        margin-right: -0pxpx;
+    }  
+}
+*/
+
