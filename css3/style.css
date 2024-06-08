@@ -15,6 +15,7 @@
 }
 */
 
+/* ESTUDOS COM TRANSFORM
 .transform {
     transform: translate(-50%,-50%);
     width: 40%;
@@ -31,4 +32,25 @@
 .transform:hover {
     transform: translate(-50%,-50%) rotate(360deg) scale(0.4, 2);
     transition: 3s;
+}
+*/
+main {
+    padding: 90px 40px;
+    display: flex;
+    justify-content: center;
+    
+    
+    /*flex-direction: row-reverse;*/
+}
+
+aside {
+    /*order: 2;*/
+    background-color: #ccc;
+    padding: 30px;
+}
+
+article {
+    /*order: 1;*/
+    height: 650px;
+    background-color: darkgray;
 }
